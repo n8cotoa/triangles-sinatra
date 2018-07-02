@@ -15,4 +15,8 @@ describe('#triangles') do
     triangle = Triangle.new(4, 2, 3)
     expect(triangle.triangle?).to(eq("Scalene"))
   end
+  it('Program will check if input is a isosceles triangle.') do
+    triangle = Triangle.new(4, 4, 3)
+    expect(triangle.triangle?).to(eq("Isosceles"))
+  end
 end

@@ -12,6 +12,8 @@ class Triangle
       'Equilateral'
     elsif [@l1, @l2, @l3].uniq.length == 3
       "Scalene"
+    elsif [@l1, @l2, @l3].uniq.length == 2
+      "Isosceles"
     end
   end
 
