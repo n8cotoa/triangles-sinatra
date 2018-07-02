@@ -8,8 +8,10 @@ class Triangle
   def triangle?()
     if @l1 + @l2 <= @l3 || @l2 + @l3 <= @l1 || @l3 + @l1 <= @l2
       'not a triangle'
-    elsif @l1 + @l2 + @l3 === @l1 * 3
+    elsif [@l1, @l2, @l3].uniq.length == 1
       'Equilateral'
+    elsif [@l1, @l2, @l3].uniq.length == 3
+      "Scalene"
     end
   end
 
